@@ -1,0 +1,22 @@
+#服务器端口
+server:
+  port: 8320
+
+spring:
+  application:
+    name: seedling-user
+  cloud:
+    nacos:
+      discovery:
+        namespace: d04240ae-7f32-46b3-a088-6f5d2e367454
+        server-addr: 127.0.0.1:8848
+        group: seedling
+      config:
+        file-extension: yaml
+        namespace: d04240ae-7f32-46b3-a088-6f5d2e367454
+        server-addr: 127.0.0.1:8848
+        group: seedling
+# 开启 hystrix
+#feign:
+#  hystrix:
+#    enabled: true
